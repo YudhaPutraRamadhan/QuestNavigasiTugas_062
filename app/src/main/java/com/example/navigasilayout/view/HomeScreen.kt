@@ -1,5 +1,6 @@
 package com.example.navigasilayout.view
 
+import android.widget.Space
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -44,6 +45,8 @@ fun HomeScreen(navController: NavHostController) {
             Text("Yudha Putra Ramadhan", fontSize = 25.sp,)
             Text("20230140062", fontSize = 23.sp,
                 color = MaterialTheme.colorScheme.secondary)
+
+            Spacer(modifier = Modifier.height(32.dp))
 
         }
     }
