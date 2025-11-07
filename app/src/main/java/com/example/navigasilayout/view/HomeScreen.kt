@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -39,6 +40,11 @@ fun HomeScreen(navController: NavHostController) {
             )
 
             Spacer(modifier = Modifier.height(16.dp))
+
+            Text("Yudha Putra Ramadhan", fontSize = 25.sp,)
+            Text("20230140062", fontSize = 23.sp,
+                color = MaterialTheme.colorScheme.secondary)
+
         }
     }
 }
