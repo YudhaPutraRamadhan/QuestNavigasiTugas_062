@@ -45,7 +45,7 @@ fun HomeScreen(
                 color = Purple80
             )
 
-            Spacer(modifier = Modifier.height(48.dp))
+            Spacer(modifier = Modifier.height(72.dp))
 
             Image(
                 painter = painterResource(id = R.drawable.logo_form),
@@ -53,9 +53,9 @@ fun HomeScreen(
                 modifier = Modifier.height(200.dp)
             )
 
-            Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height(96.dp))
 
-            Text(text = stringResource(R.string.nama_lengkap),
+            Text(text = stringResource(R.string.nama),
                 fontSize = 25.sp,
                 fontWeight = FontWeight.Bold,
                 color = Purple80)
@@ -64,7 +64,7 @@ fun HomeScreen(
                 fontWeight = FontWeight.Bold,
                 color = Purple80)
 
-            Spacer(modifier = Modifier.height(32.dp))
+            Spacer(modifier = Modifier.height(108.dp))
 
             Button(
                 onClick = OnToFormBtnClick,
