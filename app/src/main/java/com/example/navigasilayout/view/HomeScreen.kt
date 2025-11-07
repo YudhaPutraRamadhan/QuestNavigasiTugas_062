@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.material3.Button
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -16,6 +17,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -23,18 +25,27 @@ import androidx.core.content.pm.ShortcutInfoCompat
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import com.example.navigasilayout.R
+import com.example.navigasilayout.ui.theme.LightBlue
+import com.example.navigasilayout.ui.theme.Purple80
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomeScreen(navController: NavHostController) {
-    Surface (modifier = Modifier.fillMaxSize()) {
+fun HomeScreen(
+    modifier: Modifier = Modifier,
+    OnToFormBtnClick : () -> Unit) {
+    Surface (modifier = Modifier.fillMaxSize(), color = LightBlue) {
         Column (
             modifier = Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text("Selamat Datang", fontSize = 30.sp, fontWeight = FontWeight.Bold)
+            Text(text = stringResource(R.string.selamat_datang),
+                fontSize = 50.sp,
+                fontWeight = FontWeight.Bold,
+                color = Purple80
+            )
 
-            Spacer(modifier = Modifier.height(24.dp))
+            Spacer(modifier = Modifier.height(48.dp))
 
             Image(
                 painter = painterResource(id = R.drawable.logo_form),
@@ -44,17 +55,22 @@ fun HomeScreen(navController: NavHostController) {
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            Text("Yudha Putra Ramadhan", fontSize = 25.sp,)
-            Text("20230140062", fontSize = 23.sp,
-                color = MaterialTheme.colorScheme.secondary)
+            Text(text = stringResource(R.string.nama_lengkap),
+                fontSize = 25.sp,
+                fontWeight = FontWeight.Bold,
+                color = Purple80)
+            Text(text = stringResource(R.string.NIM),
+                fontSize = 23.sp,
+                fontWeight = FontWeight.Bold,
+                color = Purple80)
 
             Spacer(modifier = Modifier.height(32.dp))
 
             Button(
-                onClick = { navController.navigate("Formulir") },
+                onClick = OnToFormBtnClick,
                 modifier = Modifier.fillMaxWidth(0.7f).height(50.dp)
             ) {
-                Text("Submit")
+                Text(text = stringResource(R.string.submit))
             }
         }
     }
