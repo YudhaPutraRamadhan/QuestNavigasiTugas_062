@@ -46,9 +46,9 @@ fun TampilData(
     OnToHomeBtnClick: () -> Unit,
 ) {
     val items = listOf(
-        Pair(stringResource(R.string.nama_lengkap), "Yudha Ramadhan"),
-        Pair(stringResource(R.string.jenis_kelamin), "Laki-Laki"),
-        Pair(stringResource(R.string.alamat), "Yogyakarta")
+        stringResource(id = R.string.nama_lengkap) to "Yudha Putra Ramadhan",
+        stringResource(id = R.string.jenis_kelamin) to "Laki-Laki",
+        stringResource(id = R.string.alamat) to "Ringinharjo"
     )
     Scaffold(modifier = Modifier,
         {
