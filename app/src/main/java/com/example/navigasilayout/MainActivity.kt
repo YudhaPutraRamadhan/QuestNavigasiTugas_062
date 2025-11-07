@@ -20,8 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             NavigasiLayoutTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    DataApp(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
