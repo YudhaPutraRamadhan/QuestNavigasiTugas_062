@@ -8,4 +8,11 @@
     <string name="alamat">ALAMAT</string>
     <string name="tampil">Tampilan Data</string>
     <string name="home">Form Isian</string>
+
+    <string-array name="data_peserta">
+        <item>Nama Lengkap: Yudha Putra Ramadhan</item>
+        <item>Jenis Kelamin: Laki-Laki</item>
+        <item>Status Perkawinan: Lajang</item>
+        <item>Alamat: Ringinharjo</item>
+    </string-array>
 </resources>
