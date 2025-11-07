@@ -6,7 +6,9 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -48,6 +50,12 @@ fun HomeScreen(navController: NavHostController) {
 
             Spacer(modifier = Modifier.height(32.dp))
 
+            Button(
+                onClick = { navController.navigate("Formulir") },
+                modifier = Modifier.fillMaxWidth(0.7f).height(50.dp)
+            ) {
+                Text("Submit")
+            }
         }
     }
 }
