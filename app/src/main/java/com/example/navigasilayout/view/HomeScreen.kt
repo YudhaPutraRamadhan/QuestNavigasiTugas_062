@@ -37,6 +37,8 @@ fun HomeScreen(navController: NavHostController) {
                 contentDescription = "Logo",
                 modifier = Modifier.height(200.dp)
             )
+
+            Spacer(modifier = Modifier.height(16.dp))
         }
     }
 }
