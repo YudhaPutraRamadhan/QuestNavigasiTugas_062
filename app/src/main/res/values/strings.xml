@@ -9,6 +9,7 @@
     <string name="FormulirPendaftaran">Formulir Pendaftaran</string>
     <string name="submit">Submit</string>
     <string name="back">Formulir Pendaftaran</string>
-    <string name="home">home</string>
-    <string name="nama_lengkap">Yudha Putra Ramadhan</string>
+    <string name="home">Home</string>
+    <string name="nama_lengkap">NAMA LENGKAP</string>
+    <string name="nama">Yudha Putra Ramadhan</string>
 </resources>

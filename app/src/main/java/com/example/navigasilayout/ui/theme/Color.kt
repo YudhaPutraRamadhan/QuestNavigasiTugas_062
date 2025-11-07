@@ -2,7 +2,7 @@ package com.example.navigasilayout.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple80 = Color(0xFF9A83E7)
+val Purple80 = Color(0xFF7B4FF1)
 val PurpleGrey80 = Color(0xFFCCC2DC)
 val Pink80 = Color(0xFFEFB8C8)
 
